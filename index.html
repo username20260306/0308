@@ -2,17 +2,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JavaScriptページ</title>
+<title>クリックゲーム</title>
 </head>
 
 <body>
 
-<h1>JavaScriptデモ</h1>
+<h1 id="count">0</h1>
 
-<h2 id="count">0</h2>
 <button onclick="add()">クリック</button>
 
-<script src="0308.js"></script>
+<script>
+let number = 0;
+
+function add(){
+number++;
+document.getElementById("count").innerText = number;
+}
+</script>
 
 </body>
 </html>
